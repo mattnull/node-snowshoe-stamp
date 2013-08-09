@@ -13,7 +13,7 @@ This command needs to be ran first if CoffeeScript is not installed on your syst
 
 ## Setup
 
-Install all of the dependencies necessary for the bootstrap
+Install all of the dependencies
 
 * run `npm install`
 
