@@ -11,7 +11,7 @@ app.configure () ->
 # DEMO
 snowshoestamp = require './snowshoestamp'
 
-auth = new snowshoestamp('0ce618911082c8862495', '02cdd95d9c917cf66dd73f7d9ed2208d56e1845a')
+auth = new snowshoestamp('APIKEY', 'APISECRET')
 
 app.all '/snowshoecallback', (req, res) ->
 	auth.validateStamp(req.body)
