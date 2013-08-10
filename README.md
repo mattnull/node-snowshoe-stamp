@@ -6,7 +6,6 @@ The source is available for download from GitHub. Alternatively, you can install
 `npm install node-snowshoe-stamp`
 
 ## Example
-# DEMO
 ```coffeescript
 snowshoestamp = require './snowshoestamp'
 
