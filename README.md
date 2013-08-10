@@ -5,6 +5,21 @@ The source is available for download from GitHub. Alternatively, you can install
 
 `npm install node-snowshoe-stamp`
 
+## Example
+# DEMO
+```coffeescript
+snowshoestamp = require './snowshoestamp'
+
+auth = new snowshoestamp('APIKEY', 'APISECRET')
+
+# snowshoe api callback
+app.all '/snowshoecallback', (req, res) ->
+	auth.validateStamp(req.body)
+
+# render snowshoe stamp screen
+app.get '/stampscreen', (req, res) ->
+	auth.stampScreen(req, res)
+```
 ## Dependencies
 
 This command needs to be ran first if CoffeeScript is not installed on your system
