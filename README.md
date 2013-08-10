@@ -16,8 +16,8 @@ app.all '/snowshoecallback', (req, res) ->
 	auth.validateStamp req.body, (response) ->
 		# do something
 
-# render snowshoe stamp screen
 app.get '/stampscreen', (req, res) ->
+	# redirect to stamp screen
 	auth.stampScreen(req, res)
 ```
 
