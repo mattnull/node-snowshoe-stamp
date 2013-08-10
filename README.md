@@ -13,7 +13,8 @@ auth = new SnowShoeStamp('APIKEY', 'APISECRET')
 
 # snowshoe api callback
 app.all '/snowshoecallback', (req, res) ->
-	auth.validateStamp(req.body)
+	auth.validateStamp req.body, (response) ->
+		# do something
 
 # render snowshoe stamp screen
 app.get '/stampscreen', (req, res) ->
