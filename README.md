@@ -19,19 +19,19 @@ app.all '/snowshoecallback', (req, res) ->
 app.get '/stampscreen', (req, res) ->
 	auth.stampScreen(req, res)
 ```
-## Dependencies
+
+## Development
+### Dependencies
 
 This command needs to be ran first if CoffeeScript is not installed on your system
 
 * run `sudo npm install -g coffee-script`
 
-## Setup
+### Setup
 
 Install all of the dependencies
 
 * run `npm install`
-
-## Development
 
 The following command will watch and compile Coffeescript
 * run `cake dev`
