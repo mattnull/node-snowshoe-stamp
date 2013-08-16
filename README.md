@@ -1,5 +1,5 @@
 # Node.js SDK for the SnowShoe Stamp
-## http://snowshoestamp.com
+## <a href="http://snowshoestamp.com" target="_blank">http://snowshoestamp.com</a>
 
 ## Download
 The source is available for download from GitHub. Alternatively, you can install using Node Package Manager (npm):
