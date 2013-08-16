@@ -1,4 +1,4 @@
-# Node.js SDK for SnowShoe Stamp
+# Node.js SDK for the SnowShoe Stamp
 
 ## Download
 The source is available for download from GitHub. Alternatively, you can install using Node Package Manager (npm):
