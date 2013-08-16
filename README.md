@@ -7,7 +7,7 @@ The source is available for download from GitHub. Alternatively, you can install
 
 ## Example
 ```coffeescript
-SnowShoeStamp = require './snowshoestamp'
+SnowShoeStamp = require 'snowshoestamp'
 
 auth = new SnowShoeStamp('APIKEY', 'APISECRET')
 
