@@ -1,7 +1,7 @@
 {
   "name": "snowshoestamp",
   "description" : "Node.js SDK for SnowShoe Stamp",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "private": false,
   "main": "./lib/snowshoestamp",
   "scripts": {
