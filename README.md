@@ -14,6 +14,10 @@ SnowShoeStamp = require 'snowshoestamp'
 
 auth = new SnowShoeStamp('APIKEY', 'APISECRET')
 
+# express 4 requires explicit wiring up of bodyParser components
+bodyParser = require 'body-parser'
+app.use bodyParser.urlencoded
+
 # snowshoe api callback
 app.all '/snowshoecallback', (req, res) ->
 	auth.validateStamp req.body, (response) ->
