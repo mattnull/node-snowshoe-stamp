@@ -39,7 +39,7 @@ app.get '/stampscreen' , (req, res) ->
 ```
 http://beta.snowshoestamp.com/applications/client/{APIKEY}?userID=123&other=abc
 ```
-This is helpful when you would like to pass parameters to your application in the
+This is helpful when you would like to pass parameters to your application from the stamp screen.
 
 ## Development
 ### Dependencies
