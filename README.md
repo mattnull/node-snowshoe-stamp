@@ -24,6 +24,23 @@ app.get '/stampscreen', (req, res) ->
 	auth.stampScreen(req, res)
 ```
 
+## Add Query Parameters to your stamp screen request
+
+```coffeescript
+# snowshoe stamp screen request
+queryParams =
+	userID : '123',
+	other: "abc"
+
+app.get '/stampscreen' , (req, res) ->
+	auth.stampScreen(req,res,queryParams)
+```
+### The resulting request would look like the following
+```
+http://beta.snowshoestamp.com/applications/client/{APIKEY}?userID=123&other=abc
+```
+This is helpful when you would like to pass parameters to your application from the stamp screen.
+
 ## Development
 ### Dependencies
 
@@ -39,4 +56,3 @@ Install all of the dependencies
 
 The following command will watch and compile Coffeescript
 * run `cake dev`
-

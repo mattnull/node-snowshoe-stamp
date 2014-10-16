@@ -1,6 +1,6 @@
 {
   "name": "snowshoestamp",
-  "description" : "Node.js SDK for SnowShoe Stamp",
+  "description": "Node.js SDK for SnowShoe Stamp",
   "version": "0.1.0",
   "private": false,
   "main": "./lib/snowshoestamp",
@@ -11,20 +11,23 @@
     "type": "git",
     "url": "https://github.com/mattnull/node-snowshoe-stamp.git"
   },
-  "author" : {
-    "name" : "Matt Null",
+  "author": {
+    "name": "Matt Null",
     "email": "hello@mattnull.com"
   },
   "dependencies": {
     "express": "~3.1.0",
-    "request": "~2.21.0"
+    "query-string": "^1.0.0",
+    "request": "^2.21.0"
   },
   "engines": {
     "node": "0.8.x",
     "npm": "1.2.x"
   },
-  "licenses": [{
+  "licenses": [
+    {
       "type": "MIT",
       "url": "http://github.com/caolan/async/raw/master/LICENSE"
-  }]
+    }
+  ]
 }

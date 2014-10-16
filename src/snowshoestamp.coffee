@@ -1,12 +1,14 @@
 request = require 'request'
+queryString = require 'query-string'
 
 module.exports = class SnowShoeStamp
 
 	constructor : (@apiKey, @apiSecret) ->
 		@baseURI = 'https://beta.snowshoestamp.com/api/v2'
-	
-	stampScreen : (req, res) ->
-		res.redirect "http://beta.snowshoestamp.com/applications/client/#{@apiKey}"
+
+	stampScreen : (req, res, queryParams) ->
+		query = queryString.stringify( queryParams );
+		res.redirect "http://beta.snowshoestamp.com/applications/client/#{@apiKey}?" + query
 
 	validateStamp : (data, cb) ->
 		cb = cb ? () ->
@@ -17,9 +19,8 @@ module.exports = class SnowShoeStamp
 		url = "#{@baseURI}/stamp"
 
 		request.post {
-			url : url, 
-			oauth : oauth, 
+			url : url,
+			oauth : oauth,
 			form : data
 		}, (e, r, body) ->
-			console.log body
 			cb(body)
